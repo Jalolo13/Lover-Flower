@@ -4,6 +4,15 @@
 $clr1: #43FFD2
 $clr2: #D978AC
 
+@mixin flex-center
+	display: flex
+	justify-content: center
+	align-items: center
+
+@mixin flex-column
+	display: flex
+	flex-direction: column
+
 @mixin h4-titles
 	font-size: 20px
 	line-height: 30px
@@ -109,6 +118,7 @@ $clr2: #D978AC
 	text-align: center
 	margin-top: 133px
 	max-width: 450px
+	$
 
 .header-subtitle
 	@include h4-titles
