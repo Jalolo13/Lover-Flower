@@ -4,10 +4,20 @@
 $clr1: #43FFD2
 $clr2: #D978AC
 
+@mixin flex-center
+	display: flex
+	justify-content: center
+	align-items: center
+	
+@mixin flex-column
+	display: flex
+	flex-direction: column
+
 @mixin h4-titles
 	font-size: 20px
 	line-height: 30px
-	letter-spacing: 2%
+	letter-spacing: 0.02rem
+	color: #fff
 
 @mixin subtitles
 	font-size: 30px
@@ -21,12 +31,20 @@ $clr2: #D978AC
 	font-size: 12px
 	line-height: 18px
 	text-transform: uppercase
+	background: $clr1
+	font-weight: 700
+	letter-spacing: 0.1em
 
 @mixin list
 	text-transform: uppercase
+	color: #fff
 
 @mixin texts
 	font-size: 14px
 	line-height: 21px
+	text-transform: uppercase
+	letter-spacing: 0.04rem
 
-    
+// HEADER
+
+// HEADER END
