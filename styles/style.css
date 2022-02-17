@@ -102,10 +102,22 @@
           align-items: center;
 }
 
+.header-header-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .header-footer {
   text-align: center;
   margin-top: 133px;
   max-width: 450px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header-subtitle {
