@@ -7,7 +7,8 @@ $clr2: #D978AC
 @mixin h4-titles
 	font-size: 20px
 	line-height: 30px
-	letter-spacing: 2%
+	letter-spacing: 0.02rem
+	color: #fff
 
 @mixin subtitles
 	font-size: 30px
@@ -21,12 +22,99 @@ $clr2: #D978AC
 	font-size: 12px
 	line-height: 18px
 	text-transform: uppercase
+	background: $clr1
+	font-weight: 700
+	letter-spacing: 0.1em
 
 @mixin list
 	text-transform: uppercase
+	color: #fff
 
 @mixin texts
 	font-size: 14px
 	line-height: 21px
+	text-transform: uppercase
+	letter-spacing: 0.04rem
 
-    
+// HEADER
+
+.header
+	background: url('../images/background/Group 33725.png') center center no-repeat
+	background-size: cover
+	min-height: 1244px
+	padding: 0 165px
+
+.main-header
+	display: flex
+	max-width: 740px
+	min-height: 100%
+	align-items: center
+	float: left
+
+.header-logo
+	margin-right: 69px
+	
+.header-list
+	display: flex
+
+.list-item
+	@include list
+	margin-left: 50px
+
+	&:first-child
+		margin-left: 0
+
+.search
+	margin-left: 12px
+
+.header-link 
+	color: $clr1
+	@include texts
+	letter-spacing: 0.1em
+
+	
+.header-inner
+	text-align: right
+	display: flex
+	flex-direction: column
+	align-items: flex-end
+	padding-top: 20px
+
+.header-texts
+	color: #fff
+	font-size: 10px
+	
+	opacity: 0.7
+	letter-spacing: 0.1em
+	line-height: 15px
+	font-weight: 300
+
+.header-address
+
+	margin-top: 26px
+
+.header-block-social
+	margin-top: 60px
+	background: rgba(0, 0, 0, 0.2)
+	backdrop-filter: blur(20px)
+	border-radius: 10px
+	width: 60px
+	min-height: 154px
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	align-items: center
+
+.header-footer
+	text-align: center
+	margin-top: 133px
+	max-width: 450px
+
+.header-subtitle
+	@include h4-titles
+	
+.header-btn
+	@include btns
+	margin-top: 47px
+	
+// HEADER END
