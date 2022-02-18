@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,kBAAI;AACZ,OAAO,CAAC,gGAAI",
+    "mappings": "AAAA,OAAO,CAAC,kBAAI;AACZ,OAAO,CAAC,0HAAI",
     "sources": [
         "style.sass"
     ],
