@@ -1,0 +1,109 @@
+.footer
+  background: #000
+  padding-bottom: 60px
+.container
+  max-width: 1102px
+  width: 100%
+  margin: 0 auto
+.footer__container
+  display: flex
+  justify-content: space-between
+.mobile-item
+  display: none
+.footer-item
+  color: $clr1
+  font-weight: 700
+  @include texts
+.block-item
+  color: $clr1
+  font-weight: 400
+  @include texts
+  letter-spacing: 0.01em
+.footer-link
+  color: #FFFFFF
+  font-size: 12px
+  line-height: 17.78px
+  font-weight: 300
+  letter-spacing: 0.004em
+.block-link
+  color: #FFFFFF
+  font-size: 10px
+  line-height: 14.82px
+  font-weight: 300
+  letter-spacing: 0.01em
+  text-transform: uppercase
+.footer-first_list
+  max-width: 235px
+  width: 100%
+  .footer-item
+    margin-top: 8px
+    margin-bottom: 10px
+.footer-second_list
+  max-width: 129px
+  width: 100%
+  .footer-item
+    margin-top: 4px
+    &:first-child
+      margin-top: 30px
+      margin-bottom: 6px
+.footer-third_list
+  max-width: 90px
+  width: 100%
+  .footer-item
+    margin-top: 4px
+    &:first-child
+      margin-top: 30px
+      margin-bottom: 6px
+.footer-fourth_list
+  max-width: 160px
+  width: 100%
+  .footer-item
+    margin-top: 20px
+    &:first-child
+      margin-top: 30px
+.footer-fiveth_list
+  max-width: 246px
+  width: 100%
+  .footer-item
+    &:last-child
+      display: flex
+      gap: 20px
+    &:first-child
+      margin-top: 30px
+    margin-top: 20px
+@media screen and (max-width: 320px), screen and (max-width: 768px)
+  .container
+    max-width: 320px - 74px
+  .footer
+    padding: 14px 0 20px 0
+  .footer__container
+    display: flex
+    flex-direction: column
+    text-align: center
+  .mobile-item
+    display: block
+  .footer-second_list
+    display: none
+  .footer-third_list
+    display: none
+  .footer-first_list
+    .footer-item
+      display: none
+  .footer-fourth_list
+    max-width: 100%
+    .footer-item
+      margin-top: 20px
+      &:first-child
+        margin-top: 10px
+  .footer-fiveth_list
+    max-width: 100%
+    .footer-item
+      .footer-item_block
+        gap: 10px
+      &:last-child
+        display: flex
+        justify-content: center
+        gap: 20px
+      &:first-child
+        margin-top: 10px
+    margin-top: 20px
