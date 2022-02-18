@@ -1,4 +1,5 @@
 @import url(normalize.css)
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 $clr1: #43FFD2
@@ -72,8 +73,8 @@ $clr2: #D978AC
 
 .header
 	background: url('../images/background/Group 33725.png') center center no-repeat
-	background-size: 200%
-	min-height: 1244px
+	background-size: cover
+	min-height: 1241px
 	padding: 0 165px
 
 .main-header
@@ -86,6 +87,20 @@ $clr2: #D978AC
 .header-burger
 	display: none
 
+.header-basket-adaptive
+	display: none
+	width: 40px
+	height: 40px
+	transition: 0.4s
+	@include back-block
+	@include hover-active-btn
+
+.header-basket-adaptive2
+	display: none
+	transition: 0.4s
+	@include back-block
+	@include hover-active-btn
+	
 .header-logo
 	margin-right: 69px
 	
@@ -119,6 +134,8 @@ $clr2: #D978AC
 	color: $clr1
 	@include texts
 	letter-spacing: 0.1em
+	@include hover-active-links
+	
 
 // HEADER-INNER
 .header-inner
@@ -194,16 +211,9 @@ $clr2: #D978AC
 .header-btn
 	@include btns
 	margin-top: 47px
-	transition: 0.4s
-	&:hover
-		background: #000
-		border: 1px solid white
-		transform: scale(1.1)
-		color: #fff
-	&:active
-		transform: scale(1)
+	@include hover-active-btn
 
-.header-contacts
+.header-header-contacts
 	@include flex-column
 	@include texts
 	color: $clr1
@@ -213,13 +223,7 @@ $clr2: #D978AC
 	
 
 .header-phone-contact
-	transition: 0.4s
-	&:hover
-		text-decoration: underline
-		transition: 0.3s
-		transform: scale(1.1)
-	&:active
-		transform: scale(1.05)
+	@include hover-active-links
 
 .header-order
 	@include back-block
@@ -229,19 +233,18 @@ $clr2: #D978AC
 	text-transform: 0.1em
 	margin-top: 7px
 	transition: 0.4s
+	@include hover-active-btn
 	&:hover
-		background: #000
-		border: 1px solid white
-		transform: scale(1.1)
-		color: #fff
 		.icon-phone
 			path
-				fill:#fff
-	&:active
-		transform: scale(1.05)
+				fill: #fff	
+			
 			
 .icon-phone
-	margin-right: 8px		
+	margin-right: 8px
+	&:hover
+		path
+				
 
 .header-basket
 	@include back-block
@@ -249,11 +252,78 @@ $clr2: #D978AC
 	height: 60px
 	margin-top: 20px
 	transition: 0.4s
-	&:hover
-		background: #000
-		border: 1px solid white
-		transform: scale(1.1)
-	&:active
-		transform: scale(1.05)
+	@include hover-active-btn
 
 // HEADER END
+
+@media screen and (max-width: 1245px)
+	.header
+		padding: 0 100px
+		min-height: 666px
+		
+		background-size: cover
+
+	.main-header
+		display: none
+
+	.header-inner
+		display: none
+
+	.title
+		font-size: 80px
+		line-height: normal
+
+	.header-adaptive
+		display: flex
+		justify-content: space-between
+		align-items: center
+		max-width: 100%
+		min-height: 100%
+
+	.header-burger
+		display: block
+
+	.header-contacts
+		display: none
+
+	.header-basket-adaptive
+		display: block
+		margin-top: 0
+
+@media screen and (max-width: 768px)
+	.header
+		min-height: 741px
+		background: url('../images/background/Group 33727.png') center center no-repeat
+		background-size: cover
+	.title
+		font-size: 70px
+
+	.header-header-footer
+		margin-top: 326px
+
+@media screen and (max-width: 650px)
+	.title
+		font-size: 40px
+
+	.header
+		padding: 0 50px
+
+	.header-basket-adaptive
+		display: none
+
+	.header-basket-adaptive2
+		display: block
+		width: 40px
+		height: 40px
+
+@media screen and (max-width: 425px)
+	
+	.header-basket-adaptive2
+		width: 20px
+		height: 20px
+		&:hover
+			border: none
+
+@media screen and (max-width: 375px)
+	.header
+		padding: 0 15px
