@@ -4,6 +4,14 @@
 $clr1: #43FFD2
 $clr2: #D978AC
 
+@mixin flex-type($flex: flex, $justify: space-between, $align: center, $wrap: wrap, $text: center,$direction : column)
+	display: $flex
+	justify-content: $justify
+	align-items: $align
+	flex-wrap: $wrap
+	text-align: $text
+	flex-direction: $direction
+
 @mixin flex-center
 	display: flex
 	justify-content: center
