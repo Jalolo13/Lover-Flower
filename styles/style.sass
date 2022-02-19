@@ -1,8 +1,16 @@
 @import url(normalize.css)
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 $clr1: #43FFD2
 $clr2: #D978AC
+
+@mixin flex-type($flex: flex, $justify: space-between, $align: center, $wrap: wrap, $text: center,$direction : column)
+	display: $flex
+	justify-content: $justify
+	align-items: $align
+	flex-wrap: $wrap
+	text-align: $text
+	flex-direction: $direction
 
 @mixin flex-center
 	display: flex
@@ -12,6 +20,14 @@ $clr2: #D978AC
 @mixin flex-column
 	display: flex
 	flex-direction: column
+
+@mixin title
+	font-size: 100px
+	line-height: 121px
+	text-transform: uppercase
+	color: #fff
+	letter-spacing: 0.2em
+	font-family: 'Cormorant', sans-serif
 
 @mixin h4-titles
 	font-size: 20px
@@ -45,6 +61,24 @@ $clr2: #D978AC
 	text-transform: uppercase
 	letter-spacing: 0.04rem
 
+@mixin hover-active-btn
+	transition: 0.4s
+	&:hover
+		background: #000
+		border: 1px solid white
+		color: #fff
+		transform: scale(1.1)
+	&:active
+		transform: scale(1.05)
+
+@mixin hover-active-links
+	transition: 0.4s
+	&:hover
+		transform: scale(1.1)
+		text-decoration: underline
+	&:active
+		transform: scale(1.05)
+		text-decoration: none
 // HEADER
 
 // HEADER END

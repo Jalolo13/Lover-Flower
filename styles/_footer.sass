@@ -6,8 +6,7 @@
   width: 100%
   margin: 0 auto
 .footer__container
-  display: flex
-  justify-content: space-between
+  @include flex-type($align: none, $wrap: none, $text: none, $direction : none)
 .mobile-item
   display: none
 .footer-item
@@ -77,10 +76,7 @@
   .footer
     padding: 14px 0 20px 0
   .footer__container
-    display: flex
-    flex-direction: column
-    align-items: center
-    text-align: center
+    @include flex-type($justify: none, $wrap: none)
   .mobile-item
     display: block
   .footer-second_list
@@ -116,10 +112,7 @@
   .footer
     padding: 14px 0 20px 0
   .footer__container
-    display: flex
-    flex-direction: column
-    align-items: center
-    text-align: center
+    @include flex-type($justify: none, $wrap: none)
   .mobile-item
     display: block
   .footer-second_list
