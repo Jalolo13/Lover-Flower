@@ -274,7 +274,7 @@ $clr2: #D978AC
 .sec-one-inner
 	background: url('../images/background/Group 33726.png') center top no-repeat
 	background-size: cover
-	min-height: 1000px
+	min-height: 945px
 	padding: 0 165px
 
 .sec-one-title
@@ -368,13 +368,13 @@ $clr2: #D978AC
 	
 .two-first-block
 	max-width: 1310px
-	min-height: 858px
+	min-height: 785px
 	margin: 0 auto
 
 .sec-two-first-titles
 	max-width: 780px
 	max-height: 258px
-	margin-left: 165px
+	margin-left: 110px
 	
 .two-title
 	@include title
@@ -460,7 +460,67 @@ $clr2: #D978AC
 .card-adaptive
 	display: none
 
-@media screen and (max-width: 1440px)
+// Третья секция
+
+.sec-two-second-block
+	padding: 0 165px
+	max-width: 100%
+	min-height: 1100px
+
+.two-second-block-title
+	@include title
+	padding-top: 160px
+
+.two-second-block-inner
+	display: flex
+	justify-content: end
+
+.two-second-block-steps
+	display: grid
+	width: 610px
+	height: 488px
+	grid-template-columns: repeat(7, 1fr)
+	margin-right: calc(273px - 165px)
+	grid-template-rows: repeat(16, 1fr)
+
+.two-line
+	width: 65px
+	height: 10px
+	background: #D978AC
+	border: none
+	grid-area: 1 / 1 / 2 / 3
+
+// Шаги
+
+.first-step
+	grid-area: 2 / 1 / 5 / 4
+
+.second-step
+	grid-area: 6 / 1 / 9 / 4
+
+.third-step
+	grid-area: 12/ 1 / 16 / 4
+
+.forth-step
+	grid-area: 2 / 5 / 7 / 8
+
+.fiveth-step
+	grid-area: 9 / 5 / 11 / 8
+
+.step
+	font-weight: bold
+	font-size: 30px
+	line-height: 44px
+	letter-spacing: 0.04em
+	text-transform: uppercase
+	color: #D978AC
+	
+.step-text
+	@include texts
+	color: #fff
+	margin-top: 12px
+
+@media screen and (max-width: 1441px)
 	.arrow-left
 		display: none
 
@@ -504,7 +564,7 @@ $clr2: #D978AC
 
 	// Вторая секция
 
-	.sec-two-inner
+	.two-first-block
 		background: #000
 
 	.sec-two-first-titles
@@ -526,7 +586,9 @@ $clr2: #D978AC
 	.two-catalog
 		margin-left: 30px
 
-@media screen and (max-width: 1024px)
+	// Третья секция
+
+@media screen and (max-width: 1025px)
 	// SECTION ONE
 	.sec-one-first-block
 		display: none
@@ -547,6 +609,29 @@ $clr2: #D978AC
 		font-size: 70px
 		line-height: 90px
 
+	// Третья секция
+	.sec-two-second-block
+		background: url('../images/background/adaptive back.png') center center no-repeat
+		background-size: cover
+	
+	.two-second-block-steps
+		margin-right: 0
+
+	.two-second-block-title
+		font-size: 80px
+		line-height: normal
+
+	.second-step
+		grid-area: 2 / 5 / 8 / 8
+	
+	.third-step
+		grid-area: 7 / 1 / 10 / 4
+
+	.forth-step
+		grid-area: 9 / 5 / 12 / 8
+
+	.fiveth-step
+		grid-area: 13 / 1 / 14 / 4
 @media screen and (max-width: 768px)
 	// HEADER
 	.header
@@ -583,6 +668,10 @@ $clr2: #D978AC
 
 	// Вторая секция
 
+	.two-second-block-title
+		margin-top: 0
+		padding-top: 100px
+
 	.sec-two-first-titles
 		margin: 0 20px
 		max-height: 100%
@@ -600,6 +689,13 @@ $clr2: #D978AC
 
 	.desktop-card
 		display: none
+
+	// Третья секция
+	.sec-two-second-block
+		padding: 0 83px
+
+	.two-second-block-title
+		font-size: 60px
 @media screen and (max-width: 650px)
 	// HEADER
 	.title
@@ -624,7 +720,31 @@ $clr2: #D978AC
 		font-size: 20px
 		line-height: 35px
 
-@media screen and (max-width: 425px)
+	.sec-two-second-block
+		padding: 0 50px
+		
+	.two-second-block-title
+		font-size: 45px
+
+	.two-line
+		grid-area: 1 / 5 / 1 / 5
+
+	.first-step
+		grid-area: 2 / 5 / 3 / 8
+
+	.second-step
+		grid-area: 4 / 4 / 4 / 8
+
+	.third-step
+		grid-area: 5 / 3 / 5 / 7
+
+	.forth-step
+		grid-area: 6 / 1 / 6 / 8
+
+	.fiveth-step
+		grid-area: 7 / 1 / 7 / 8
+
+@media screen and (max-width: 426px)
 	// HEADER
 	.header-basket-adaptive2
 		width: 20px
@@ -639,8 +759,23 @@ $clr2: #D978AC
 	.sec-one-title
 		font-size: 60px
 
+	.two-second-block-title
+		font-size: 40px
+		text-align: center
 
-@media screen and (max-width: 375px)
+	.two-second-block-steps
+		row-gap: 15px
+
+	.step
+		font-size: 20px
+		line-height: 30px
+
+	.sec-two-second-block
+		padding: 0 25px
+
+
+
+@media screen and (max-width: 376px)
 	.header
 		padding: 0 15px
 
