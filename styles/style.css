@@ -518,6 +518,13 @@
   right: 30px;
 }
 
+.sec-two-inner {
+  background: url("../images/background/sec-two-back.png") center center no-repeat;
+  background-size: cover;
+  min-height: 2028px;
+  max-width: 100%;
+}
+
 @media screen and (max-width: 1245px) {
   .header {
     padding: 0 100px;
