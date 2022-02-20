@@ -20,7 +20,7 @@
 .form__container
   @include flex-type($align: none, $wrap: none, $text: none, $direction: none)
 .form-title
-  @include title
+  @extend %title
   letter-spacing: 0.002em
 .form-right
   max-width: 632px
@@ -40,7 +40,7 @@
   max-width: 255px
   width: 100%
   margin-top: 53px
-  @include texts
+  @extend %texts
   line-height: 20px
   letter-spacing: 0.002em
   color: #fff
@@ -53,7 +53,7 @@
   background: transparent
   padding-left: 20px
   padding-bottom: 20px
-  @include texts
+  @extend %texts
   line-height: 20px
   color: #395959
   margin-bottom: 10px
@@ -86,7 +86,7 @@
   a
     color: $clr2
     text-decoration: underline
-    @include hover-active-links
+    @extend %hover-active-links
   
 // MEDIA
 
