@@ -9,6 +9,14 @@ $clr2: #D978AC
 	backdrop-filter: blur(20px)
 	border-radius: 10px
 
+@mixin flex-type($flex: flex, $justify: space-between, $align: center, $wrap: wrap, $text: center,$direction : column)
+	display: $flex
+	justify-content: $justify
+	align-items: $align
+	flex-wrap: $wrap
+	text-align: $text
+	flex-direction: $direction
+
 @mixin flex-center
 	display: flex
 	justify-content: center
@@ -77,7 +85,6 @@ $clr2: #D978AC
 		transform: scale(1.05)
 		text-decoration: none
 // HEADER
-
 
 .header
 	background: url('../images/background/Group 33725.png') center center no-repeat
@@ -815,4 +822,9 @@ $clr2: #D978AC
 
 	.sec-two-card
 		padding: 0 10px
+// HEADER END
+@import order
+@import form
+@import networks
+@import footer
 
