@@ -169,17 +169,17 @@ input[type=number]::-webkit-outer-spin-button {
   letter-spacing: 0.04rem;
 }
 
-.btn-inbasket, .header-basket, .header-order, .header-btn, .header-basket-adaptive2, .header-basket-adaptive {
+.header-basket, .header-order, .header-btn, .header-basket-adaptive2, .header-basket-adaptive {
   transition: 0.2s;
 }
-.btn-inbasket:hover, .header-basket:hover, .header-order:hover, .header-btn:hover, .header-basket-adaptive2:hover, .header-basket-adaptive:hover {
-  background: #000;
-  border: 1px solid white;
+.header-basket:hover, .header-order:hover, .header-btn:hover, .header-basket-adaptive2:hover, .header-basket-adaptive:hover {
+  background: #7D2253;
   color: #fff;
   transform: scale(1.1);
 }
-.btn-inbasket:active, .header-basket:active, .header-order:active, .header-btn:active, .header-basket-adaptive2:active, .header-basket-adaptive:active {
+.header-basket:active, .header-order:active, .header-btn:active, .header-basket-adaptive2:active, .header-basket-adaptive:active {
   transform: scale(1.05);
+  box-shadow: inset 0px 0px 10px #1B000E;
 }
 
 .button-desc a, .header-phone-contact, .header-link {
@@ -246,6 +246,7 @@ input[type=number]::-webkit-outer-spin-button {
 .list-item:hover {
   transform: scale(1.2);
   text-decoration: underline;
+  color: #43FFD2;
 }
 .list-item:hover:last-child {
   transform: none;
@@ -542,6 +543,19 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.1em;
+  transition: 0.2s;
+}
+.btn-inbasket:hover {
+  background: #43FFD2;
+  color: #000;
+  font-weight: bold;
+  transform: scale(1.1);
+}
+.btn-inbasket:active {
+  background: none;
+  border: 0.5px solid #43FFD2;
+  transform: scale(1.05);
+  color: #fff;
 }
 
 .two-catalog {
@@ -688,6 +702,7 @@ input[type=number]::-webkit-outer-spin-button {
   height: 292px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   max-width: 730px;
   width: 100%;
 }
@@ -1506,6 +1521,31 @@ input[type=number]::-webkit-outer-spin-button {
   .fiveth-step {
     grid-area: 13/1/14/4;
   }
+
+  .order-title {
+    font-size: 70px;
+  }
+
+  .order-second-line {
+    text-align: left;
+  }
+  .order-second-line::before {
+    display: none;
+  }
+
+  .order-bottom-frames {
+    justify-content: normal;
+    gap: 30px;
+  }
+
+  .form-title {
+    font-size: 60px;
+    line-height: 65px;
+  }
+
+  .order-img {
+    margin-right: 30px;
+  }
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -1597,7 +1637,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .order-second-line {
-    text-align: right;
+    text-align: left;
     position: relative;
   }
   .order-second-line::before {
@@ -1609,7 +1649,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .order-title {
-    font-size: 50px;
+    font-size: 45px;
     line-height: 48.5px;
     letter-spacing: 0.002em;
   }
