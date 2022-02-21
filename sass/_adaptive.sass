@@ -111,6 +111,28 @@
   .fiveth-step
     grid-area: 13 / 1 / 14 / 4
 
+  // Order
+  .order-title
+
+    font-size: 70px
+
+  .order-second-line
+    text-align: left
+    &::before
+      display: none
+
+  .order-bottom-frames
+    justify-content: normal
+    gap: 30px
+
+  // form
+  .form-title
+    font-size: 60px
+    line-height: 65px
+
+  .order-img
+    margin-right: 30px
+
 @media screen and (max-width: 768px)
   // HEADER
   .header
@@ -187,7 +209,7 @@
     max-width: 330px 
     width: 100% 
   .order-second-line 
-    text-align: right 
+    text-align: left 
     position: relative 
     &::before 
       width: 110px 
@@ -196,7 +218,7 @@
       top: 24px 
       left: 15px 
   .order-title 
-    font-size: 50px 
+    font-size: 45px 
     line-height: 48.5px 
     letter-spacing: 0.002em 
   .order-top 
