@@ -12,11 +12,11 @@
 .footer-item
   color: $clr1
   font-weight: 700
-  @include texts
+  @extend %texts
 .block-item
   color: $clr1
   font-weight: 400
-  @include texts
+  @extend %texts
   letter-spacing: 0.01em
 .footer-link
   color: #FFFFFF
@@ -72,6 +72,7 @@
     margin-top: 20px
 
 // MEDIA
+
 @media screen and (max-width: 320px)
   .container
     max-width: 320px - 20px

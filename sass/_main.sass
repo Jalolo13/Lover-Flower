@@ -1,84 +1,3 @@
-@import url(normalize.css)
-
-@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
-
-$clr1: #43FFD2
-$clr2: #D978AC
-@mixin back-block
-	background: rgba(0, 0, 0, 0.2)
-	backdrop-filter: blur(20px)
-	border-radius: 10px
-
-@mixin flex-center
-	display: flex
-	justify-content: center
-	align-items: center
-
-@mixin flex-column
-	display: flex
-	flex-direction: column
-
-@mixin title
-	font-size: 100px
-	line-height: 121px
-	text-transform: uppercase
-	color: #fff
-	letter-spacing: 0.02em
-	font-family: 'Cormorant', sans-serif
-
-@mixin h4-titles
-	font-size: 20px
-	line-height: 30px
-	letter-spacing: 0.02rem
-	color: #fff
-
-@mixin subtitles
-	font-size: 30px
-	line-height: 44px
-	text-transform: uppercase
-
-@mixin btns
-	width: 255px
-	height: 50px
-	color: #000
-	font-size: 12px
-	line-height: 18px
-	text-transform: uppercase
-	background: $clr1
-	font-weight: 700
-	letter-spacing: 0.1em
-
-@mixin list
-	text-transform: uppercase
-	color: #fff
-
-@mixin texts
-	font-size: 14px
-	line-height: 21px
-	text-transform: uppercase
-	letter-spacing: 0.04rem
-
-@mixin hover-active-btn
-	transition: 0.2s
-	&:hover
-		background: #000
-		border: 1px solid white
-		color: #fff
-		transform: scale(1.1)
-	&:active
-		transform: scale(1.05)
-
-@mixin hover-active-links
-	transition: 0.2s
-	&:hover
-		transform: scale(1.1)
-		text-decoration: underline
-	&:active
-		transform: scale(1.05)
-		text-decoration: none
-// HEADER
-
-
 .header
 	background: url('../images/background/Group 33725.png') center center no-repeat
 	background-size: cover
@@ -100,14 +19,14 @@ $clr2: #D978AC
 	width: 40px
 	height: 40px
 	transition: 0.4s
-	@include back-block
-	@include hover-active-btn
+	@extend %back-block
+	@extend %hover-active-btn
 
 .header-basket-adaptive2
 	display: none
 	transition: 0.4s
-	@include back-block
-	@include hover-active-btn
+	@extend %back-block
+	@extend %hover-active-btn
 	
 .header-logo
 	margin-right: 69px
@@ -116,7 +35,7 @@ $clr2: #D978AC
 	display: flex
 
 .list-item
-	@include list
+	@extend %list
 	margin-left: 50px
 	transition: 0.2s
 	&:first-child
@@ -140,9 +59,9 @@ $clr2: #D978AC
 		
 .header-link 
 	color: $clr1
-	@include texts
+	@extend %texts
 	letter-spacing: 0.1em
-	@include hover-active-links
+	@extend %hover-active-links
 	
 
 // HEADER-INNER
@@ -181,7 +100,7 @@ $clr2: #D978AC
 
 .header-block-social
 	margin-top: 60px
-	@include back-block
+	@extend %back-block
 	width: 60px
 	min-height: 154px
 	display: flex
@@ -214,37 +133,37 @@ $clr2: #D978AC
 	max-width: 100%
 	
 .header-subtitle
-	@include h4-titles
+	@extend %h4-titles
 	
 .header-btn
-	@include btns
+	@extend %btns
 	margin-top: 47px
-	@include hover-active-btn
+	@extend %hover-active-btn
 
 .header-header-contacts
-	@include flex-column
-	@include texts
+	@extend %flex-column
+	@extend %texts
 	color: $clr1
 	float: right
 	letter-spacing: 0.1em
 	align-items: flex-end
 	
 .header-contacts
-	@include flex-column
+	@extend %flex-column
 	align-items: flex-end
 	
 .header-phone-contact
-	@include hover-active-links
+	@extend %hover-active-links
 
 .header-order
-	@include back-block
-	@include flex-center
+	@extend %back-block
+	@extend %flex-center
 	padding: 10px 19px
 	text-transform: uppercase
 	text-transform: 0.1em
 	margin-top: 7px
 	transition: 0.4s
-	@include hover-active-btn
+	@extend %hover-active-btn
 	&:hover
 		.icon-phone
 			path
@@ -253,17 +172,17 @@ $clr2: #D978AC
 			
 .icon-phone
 	margin-right: 8px
-	&:hover
-		path
-				
 
 .header-basket
-	@include back-block
+	@extend %back-block
 	width: 60px
 	height: 60px
 	margin-top: 20px
 	transition: 0.4s
-	@include hover-active-btn
+	@extend %hover-active-btn
+
+
+// HEADER END
 
 // HEADER END
 
@@ -281,7 +200,7 @@ $clr2: #D978AC
 	padding: 0 165px
 
 .sec-one-title
-	@include title
+	@extend %title
 	padding-top: 100px
 
 // GRIDS 
@@ -297,7 +216,7 @@ $clr2: #D978AC
 .sec-one-block
 	padding: 30px 30px 30px 50px
 	position: relative
-	@include back-block
+	@extend %back-block
 	border-radius: 20px
 
 .sec-one-first-block
@@ -380,13 +299,13 @@ $clr2: #D978AC
 	margin-left: 110px
 	
 .two-title
-	@include title
+	@extend %title
 
 .two-title2
 	text-align: right
 
 .two-subtitle
-	@include h4-titles
+	@extend %h4-titles
 	font-weight: 200
 	text-align: center
 	margin-bottom: 86px
@@ -395,7 +314,7 @@ $clr2: #D978AC
 // Карточки
 
 .sec-two-first-cards
-	@include flex-center
+	@extend %flex-center
 	margin-bottom: 60px
 	
 .sec-two-card
@@ -407,18 +326,18 @@ $clr2: #D978AC
 	margin-left: 0
 
 .sec-two-card-title
-	@include h4-titles
+	@extend %h4-titles
 	text-transform: uppercase
 	font-weight: 300
 	margin: 10px 0
 	
 .card-price
-	@include texts
+	@extend %texts
 	color: #fff
 	font-weight: bold
 
 .card-discount
-	@include texts
+	@extend %texts
 	color: #939393
 	text-decoration-line: line-through
 	margin-left: 10px
@@ -435,7 +354,7 @@ $clr2: #D978AC
 	font-size: 12px
 	line-height: 18px
 	letter-spacing: 0.1em
-	@include hover-active-btn
+	@extend %hover-active-btn
 
 // Каталог
 
@@ -471,7 +390,7 @@ $clr2: #D978AC
 	min-height: 1100px
 
 .two-second-block-title
-	@include title
+	@extend %title
 	padding-top: 160px
 
 .two-second-block-inner
@@ -519,8 +438,7 @@ $clr2: #D978AC
 	color: #D978AC
 	
 .step-text
-	@include texts
+	@extend %texts
 	color: #fff
 	margin-top: 12px
 
-@import adaptive
