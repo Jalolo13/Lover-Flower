@@ -122,7 +122,7 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 10px;
 }
 
-.sec-two-first-cards, .header-order {
+.about-basket, .sec-two-first-cards, .header-order {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -133,7 +133,7 @@ input[type=number]::-webkit-outer-spin-button {
   flex-direction: column;
 }
 
-.form-title, .order-title, .two-second-block-title, .two-title, .sec-one-title {
+.about-title, .form-title, .order-title, .two-second-block-title, .two-title, .sec-one-title {
   font-size: 100px;
   line-height: 121px;
   text-transform: uppercase;
@@ -161,16 +161,26 @@ input[type=number]::-webkit-outer-spin-button {
   letter-spacing: 0.1em;
 }
 
-.list-item2, .list-item {
+.about-list-link, .about-list-item, .list-item2, .list-item {
   text-transform: uppercase;
   color: #fff;
 }
 
-.block-item, .footer-item, .form-input, .form-desc, .order-desc, .step-text, .card-discount, .card-price, .header-header-contacts, .header-adaptive-phone, .header-address, .header-link {
+.about-phone, .block-item, .footer-item, .form-input, .form-desc, .order-desc, .step-text, .card-discount, .card-price, .header-header-contacts, .header-adaptive-phone, .header-address, .header-link {
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   letter-spacing: 0.04rem;
+}
+
+.about-garmonie-text, .about-list-order, .about-garantie-text, .about-text-team {
+  color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  margin-top: 20px;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 0.04em;
 }
 
 .header-basket, .header-order, .header-btn {
@@ -2541,6 +2551,172 @@ input[type=number]::-webkit-outer-spin-button {
   .footer-fiveth_list .footer-item:first-child {
     margin-top: 10px;
   }
+}
+.about-inner {
+  background: url("../images/background/about us back.png") no-repeat;
+  background-size: cover;
+  min-height: 2833px;
+}
+
+.about-us-header {
+  max-width: 100%;
+  min-height: 80px;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  padding: 0 165px;
+  align-items: center;
+}
+
+.about-header-list {
+  display: flex;
+}
+
+.about-contact {
+  display: flex;
+  align-items: center;
+}
+
+.about-vector-phone {
+  margin-left: 150px;
+  margin-right: 10px;
+}
+
+.about-phone {
+  color: #43FFD2;
+  transition: 0.2s;
+}
+.about-phone:hover {
+  text-decoration: underline;
+}
+
+.about-basket {
+  background: rgba(0, 0, 0, 0);
+  width: 60px;
+  height: 60px;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  transition: 0.2s;
+  margin-left: 21px;
+}
+.about-basket:hover {
+  transform: scale(1.1);
+}
+
+.about-list-item {
+  margin-left: 50px;
+  transition: 0.2s;
+}
+.about-list-item:first-child {
+  margin-left: 0;
+}
+
+.about-list-link {
+  transition: 0.2s;
+  display: inline-block;
+}
+.about-list-link:hover {
+  color: #43FFD2;
+  transform: scale(1.1);
+  text-decoration: underline;
+}
+
+.about-section {
+  padding: 0 165px;
+  position: relative;
+}
+
+.about-about {
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 12px;
+}
+
+.about-title {
+  margin: 46px 0 98px 100px;
+}
+
+.about {
+  font-size: 60px;
+  line-height: 64px;
+  color: #43FFD2;
+  text-transform: uppercase;
+  font-family: "Cormorant", sans-serif;
+  letter-spacing: 0.02em;
+  margin-left: 185px;
+}
+.about .about-flower {
+  display: flex;
+  align-items: center;
+}
+
+.about-flower {
+  display: flex;
+  align-items: center;
+}
+
+.about-hr {
+  background: #43FFD2;
+  border: none;
+  width: 60px;
+  height: 1px;
+  margin-left: 20px;
+}
+
+.about-team {
+  padding: 40px 165px 40px 20px;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(20px);
+  position: absolute;
+  right: 0;
+  max-width: 842px;
+  min-height: 282px;
+}
+
+.about-text-title {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.about-garanties {
+  margin-top: 400px;
+}
+
+.about-garantie-text {
+  margin-bottom: 100px;
+}
+
+.about-list-order {
+  list-style: inside;
+  text-transform: lowercase;
+  margin-left: 255px;
+  margin-top: 20px;
+}
+
+.about-garmonie-title {
+  font-family: "Cormorant", sans-serif;
+  font-size: 60px;
+  line-height: 64px;
+  margin-top: 162px;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.about-garmonie-text {
+  text-transform: uppercase;
+  margin-left: 185px;
+  margin-top: 40px;
+}
+
+.about-footer {
+  margin-top: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */
