@@ -8,37 +8,175 @@
 @media screen and (max-width: 1245px)
   // Header
   .header
-    padding: 0 100px
+    padding: 30px 30px
     min-height: 666px
-    
     background-size: cover
 
-  .main-header
-    display: none
+  .header-inner
+    display: block
+    text-align: left
+    left: 0
+    height: 265px
+
+  .header-block-social
+    display: block
+    width: 165px
+    min-height: 125px
+    margin-top: 10px
+
+  // Адаптивные вещи
+
+  .header-adaptive-text
+    display: inline
+    line-height: 0
+
+  .header-basket-adaptive
+    display: block
+    position: absolute
+    right: 30px
+    margin-top: 0
+
+  .header-adaptive
+    display: flex
+    justify-content: center
+    align-items: center
+    max-width: 100%
+    min-height: 100%
+
+  .header-adaptive-phone
+    display: block
+    margin-top: 10px
+
+  .social
+    margin-top: 10px
+    display: block
+
+  .header-social
+    flex-direction: row
+    justify-content: space-between
+    width: 70%
+    margin-top: 15px
+
+  // Header burger menu
+    // JS 
+  .header-body
+    display: block
+    overflow: auto
+    top: 0
+    left: 0
+    z-index: 10
+    height: 100%
+    width: 40%
+    position: fixed
+    background-color: #000
+    transform: translate(-100%, 0px)
+    padding: 30px
+
+  .header-body._active
+    transform: translate(0px, 0px)
+    transition: .7s
+
+  .header-body._close
+    transform: translate(-100%, 0px)
+    transition: .4s
+  // 
+  .header-close 
+    position: absolute
+    right: 32px
+    top: 50px
+    width: 32px
+    height: 32px
+    cursor: pointer
+    &::before, &::after
+      position: absolute
+      left: 15px
+      content: ' '
+      height: 33px
+      width: 2px
+      background-color: $clr1
+    &::before
+      transform: rotate(45deg)
+    &::after
+      transform: rotate(-45deg)
+    
+  .menu-icon
+    z-index: 5
+    display: block
+    position: absolute
+    width: 35px
+    height: 20px
+    left: 30px
+    cursor: pointer
+    &::before, &::after, span
+      left: 0
+      position: absolute
+      height: 10%
+      width: 100%
+      transition: all 0.3s ease 0s
+      background: $clr1
+    &::before, &::after
+      content: ''
+     
+    &::before
+      top: 0
+
+    &::after
+      bottom: 0
+
+    span
+      top: 50%
+      transform: scale(1) translate(0px, -50%)
+
+  // Списки
+  .header-list
+    display: block
 
   .header-inner
-    display: none
+    position: static
+
+  .list-els
+    flex-direction: column-reverse
+
+  .list-item, .list-item2
+    margin-left: 0
+    &:hover
+      transform: none
+      color: #fff
+      text-decoration: none
+    &:first-child, &:last-child
+      display: inline-block
+    
+  .list-link
+    margin: 0
+    font-size: 30px
+    margin-top: 20px
+    display: inline-block
+    transition: .2s
+    &:hover
+      color: $clr1
+      transform: scale(1.1)
+      text-decoration: underline
+
+  .search
+    display: inline-block
+    width: 24px
+    height: 24px
+    margin-left: 0
+  // Остальное
 
   .title
     font-size: 80px
     line-height: normal
 
-  .header-adaptive
-    display: flex
-    justify-content: space-between
-    align-items: center
-    max-width: 100%
-    min-height: 100%
-
-  .header-burger
-    display: block
-
   .header-contacts
     display: none
 
-  .header-basket-adaptive
-    display: block
-    margin-top: 0
+  .header-logo
+    position: relative
+    z-index: 2
+
+  .header-footer
+    position: static
 
   // Вторая секция
 
@@ -67,6 +205,14 @@
   // Третья секция
 
 @media screen and (max-width: 1025px)
+  // Header
+  .list-link
+    font-size: 20px
+
+  .search
+    width: 16px
+    height: 16px
+
   // SECTION ONE
   .sec-one-first-block
     display: none
@@ -141,6 +287,14 @@
     background-size: cover
   .title
     font-size: 70px
+
+  .header-body
+    padding: 20px
+    width: 50%
+
+  .header-close
+    right: 20px
+    top: 35px
 
   .header-header-footer
     margin-top: 326px
@@ -378,6 +532,25 @@
   .header
     padding: 0 50px
 
+  .header-body
+    width: 65%
+    padding: 15px
+
+  .header-close
+    &::before, &::after
+      width: 1px
+      height: 25px
+      
+  .menu-icon
+    width: 25px
+    height: 15px
+    left: 20px
+    &::before, &::after, span
+      height: 12%
+
+  .list-link
+    font-size: 19px
+
   .header-basket-adaptive
     display: none
 
@@ -385,6 +558,13 @@
     display: block
     width: 40px
     height: 40px
+    position: absolute
+    right: 20px
+
+  .search
+    width: 13px
+    height: 13px
+    margin-right: 3px
 
   // SECTION
   .sec-one-title
@@ -426,6 +606,10 @@
     &:hover
       border: none
 
+  .header-body
+    width: 80%
+    
+
   // SECTION
   .sec-one-inner
     padding: 0 50px
@@ -452,6 +636,9 @@
   @media screen and (max-width: 376px)
   .header
     padding: 0 15px
+
+  .list-link, .header-adaptive-phone
+    font-size: 14px
 
   // SECTION
   .sec-one-inner

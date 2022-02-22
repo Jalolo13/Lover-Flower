@@ -4,6 +4,7 @@
 	min-height: 1300px
 	padding: 0 165px
 
+
 .main-header
 	display: flex
 	max-width: 740px
@@ -11,26 +12,28 @@
 	align-items: center
 	float: left
 
-.header-burger
-	display: none
-
 .header-basket-adaptive
 	display: none
 	width: 40px
 	height: 40px
 	transition: 0.4s
 	@extend %back-block
-	@extend %hover-active-btn
+	&:hover
+		transform: scale(1.2)
 
 .header-basket-adaptive2
 	display: none
 	transition: 0.4s
 	@extend %back-block
-	@extend %hover-active-btn
+	&:hover
+		transform: scale(1.2)
 	
 .header-logo
 	margin-right: 69px
 	
+.list-els
+	display: flex
+
 .header-list
 	display: flex
 
@@ -40,15 +43,31 @@
 	transition: 0.2s
 	&:first-child
 		margin-left: 0
-	&:last-child
+		display: none
+	&:nth-child(2)
 		margin-left: 0
+
+	&:last-child
+		display: none
+	
+	.adaptive-hr
+		max-width: 200px
+		background: #555
+		border: none
+		height: 1px
+		margin-top: 20px
+		
+.list-item2
+	@extend %list
+	transition: .2s
+
+.list-link
+	display: inline-block
+	transition: .2s
 	&:hover
 		transform: scale(1.2)
 		text-decoration: underline
 		color: $clr1
-		&:last-child
-			transform: none	
-			text-decoration: none
 
 .search
 	margin-left: 50px
@@ -63,7 +82,10 @@
 	@extend %texts
 	letter-spacing: 0.1em
 	@extend %hover-active-links
-	
+
+.header-body
+	display: flex
+	align-items: center	
 
 // HEADER-INNER
 .header-inner
@@ -90,7 +112,7 @@
 .header-texts
 	color: #fff
 	font-size: 10px
-	
+	text-transform: uppercase
 	opacity: 0.7
 	letter-spacing: 0.1em
 	line-height: 15px
@@ -98,6 +120,9 @@
 
 .header-address
 	margin-top: 26px
+	color: $clr1
+	@extend %texts
+	letter-spacing: 0.1em
 
 .header-block-social
 	margin-top: 60px
@@ -105,9 +130,26 @@
 	width: 60px
 	min-height: 154px
 	display: flex
-	flex-direction: column
+	justify-content: center
+
+.header-social
+	display: flex
 	justify-content: space-around
-	align-items: center
+	flex-direction: column
+
+.header-adaptive-text
+	color: #555
+	font-size: 10px
+	line-height: 15px
+	letter-spacing: 0.04em
+	font-feature-settings: 'liga' off
+	display: none
+
+.header-adaptive-phone
+	color: #fff
+	display: none
+	@extend %texts
+	font-size: 19px
 
 .header-soc
 	transition: 0.2s
@@ -181,11 +223,6 @@
 	margin-top: 20px
 	transition: 0.4s
 	@extend %hover-active-btn
-
-
-// HEADER END
-
-// HEADER END
 
 // SECTION ONE
 // Первая секция
@@ -358,14 +395,9 @@
 	transition: .2s
 	&:hover
 		background: $clr1
+		border: $clr1
 		color: #000
 		font-weight: bold
-		transform: scale(1.1)
-	&:active
-		background: none
-		border: 0.5px solid $clr1
-		transform: scale(1.05)
-		color: #fff
 
 // Каталог
 
