@@ -168,17 +168,18 @@ main {
   margin-left: 95px;
 }
 
-.delivery-disclaimer::after {
-  content: '!';
-  position: relative;
-  bottom: 102px;
-  left: -40px;
-  font-weight: 700;
-  color: #D978AC;
-  font-size: 100px;
-  line-height: 121px;
-  letter-spacing: 0.02rem;
-  font-family: 'Cormorant';
+.payment-block {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .disclaimer-title {
@@ -213,15 +214,20 @@ main {
   margin-top: 30px;
 }
 
+.block-inner {
+  max-width: 1110px;
+  width: 100%;
+}
+
 .payment-cards {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  max-width: 1110px;
-  width: 100%;
 }
 
 .payment-card {
@@ -358,9 +364,7 @@ main {
 }
 
 .container {
-  max-width: 1130px;
-  width: 100%;
-  margin: 0 auto;
+  padding: 0 165px;
 }
 
 .footer__container {
@@ -485,9 +489,161 @@ main {
   margin-top: 30px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 1241px) {
+  main {
+    padding: 0 95px;
+  }
+  .payment-cards {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 800px;
+    width: 100%;
+  }
+  .payment-card {
+    max-width: 380px;
+    width: 100%;
+    border-radius: 20px;
+    background: #00000033;
+    padding: 54px 45px 53px 45px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .payment-card:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .block-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  main {
+    padding: 0 75px;
+  }
+  .payment-cards {
+    margin-top: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 15px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 100%;
+    width: 100%;
+  }
+  .payment-card {
+    max-width: 100%;
+    width: 100%;
+    min-height: 180px;
+    height: 100%;
+    border-radius: 20px;
+    background: #00000033;
+    padding: 0 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: start;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .payment-card:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .block-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .payment-card-desc {
+    max-width: 500px;
+    width: 100%;
+    font-weight: 300;
+    font-family: 'Oswald';
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.02rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: start;
+  }
+  .card-circle {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #6B535F;
+    margin-bottom: 0;
+    margin-right: 25px;
+  }
+  .price {
+    margin-top: 100px;
+    margin-left: 0;
+    padding-left: 34px;
+    max-width: 620px;
+    width: 100%;
+  }
+  .terms {
+    margin-left: 0;
+    padding-left: 34px;
+    max-width: 800px;
+    width: 100%;
+  }
+  .additionally {
+    margin-top: 100px;
+    max-width: 961px;
+    width: 100%;
+    padding: 30px 80px 30px 33px;
+    background: #00000033;
+    border-radius: 20px;
+    margin-bottom: 200px;
+  }
   .container {
-    max-width: 300px;
+    padding: 0 95px;
   }
   .footer {
     padding: 14px 0 20px 0;
@@ -553,71 +709,392 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    max-width: 738px;
+  main {
+    padding: 0 55px;
+  }
+  .delivery-titles {
+    max-width: 460px;
     width: 100%;
-    margin: 0 auto;
+    margin-top: 60px;
   }
-  .footer {
-    padding: 14px 0 20px 0;
+  .delivery-title {
+    font-size: 70px;
+    line-height: 77px;
+    color: #fff;
+    letter-spacing: 0.04rem;
+    font-family: 'Cormorant';
+    text-transform: uppercase;
   }
-  .footer__container {
+  .delivery-disclaimer {
+    margin-top: 53px;
+    max-width: 350px;
+    width: 100%;
+    margin-left: 95px;
+  }
+  .payment-cards {
+    margin-top: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: none;
-        -ms-flex-pack: none;
-            justify-content: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 100%;
+    width: 100%;
+  }
+  .payment-card {
+    max-width: 100%;
+    width: 100%;
+    min-height: 200px;
+    height: 100%;
+    border-radius: 20px;
+    background: #00000033;
+    padding: 0 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -ms-flex-wrap: none;
-        flex-wrap: none;
-    text-align: center;
+    text-align: start;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .payment-card:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .payment-block {
+    margin-top: 80px;
+  }
+  .block-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .mobile-item {
-    display: block;
+  .payment-card-desc {
+    max-width: 390px;
+    width: 100%;
+    font-weight: 300;
+    font-family: 'Oswald';
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.02rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: start;
   }
-  .footer-second_list {
-    display: none;
+  .card-circle {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #6B535F;
+    margin-bottom: 0;
+    margin-right: 25px;
   }
-  .footer-third_list {
-    display: none;
+  .price {
+    margin-top: 100px;
+    margin-left: 0;
+    padding-left: 34px;
+    max-width: 580px;
+    width: 100%;
   }
-  .footer-first_list .footer-item {
-    display: none;
+  .terms {
+    margin-left: 0;
+    padding-left: 34px;
+    max-width: 550px;
+    width: 100%;
   }
-  .footer-fourth_list {
-    max-width: 100%;
+  .additionally {
+    margin-top: 100px;
+    max-width: 961px;
+    width: 100%;
+    padding: 30px 40px 30px 33px;
+    background: #00000033;
+    border-radius: 20px;
+    margin-bottom: 200px;
   }
-  .footer-fourth_list .footer-item {
-    margin-top: 20px;
+}
+
+@media screen and (max-width: 650px) {
+  main {
+    padding: 0 40px;
   }
-  .footer-fourth_list .footer-item:first-child {
-    margin-top: 10px;
+  .delivery-titles {
+    max-width: 350px;
+    width: 100%;
+    margin-top: 40px;
   }
-  .footer-fiveth_list {
-    max-width: 100%;
-    margin-top: 20px;
+  .delivery-title {
+    font-size: 50px;
+    line-height: 49px;
+    color: #fff;
+    letter-spacing: 0.04rem;
+    font-family: 'Cormorant';
+    text-transform: uppercase;
   }
-  .footer-fiveth_list .footer-item .footer-item_block {
-    gap: 10px;
+  .delivery-disclaimer {
+    margin-top: 53px;
+    max-width: 350px;
+    width: 100%;
+    margin-left: 0;
   }
-  .footer-fiveth_list .footer-item:last-child {
+  .payment-cards {
+    margin-top: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 100%;
+    width: 100%;
   }
-  .footer-fiveth_list .footer-item:first-child {
-    margin-top: 10px;
+  .payment-card {
+    max-width: 100%;
+    width: 100%;
+    min-height: 200px;
+    height: 100%;
+    border-radius: 20px;
+    background: #00000033;
+    padding: 0 27px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: start;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .payment-card:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .payment-block {
+    margin-top: 70px;
+  }
+  .block-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .payment-card-desc {
+    max-width: 390px;
+    width: 100%;
+    font-weight: 300;
+    font-family: 'Oswald';
+    font-size: 20px;
+    line-height: 26px;
+    letter-spacing: 0.02rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: start;
+  }
+  .card-circle {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #6B535F;
+    margin-bottom: 0;
+    margin-right: 25px;
+  }
+  .price {
+    margin-top: 100px;
+    margin-left: 0;
+    padding-left: 34px;
+    max-width: 320px;
+    width: 100%;
+  }
+  .terms {
+    margin-left: 0;
+    padding-left: 34px;
+    max-width: 320px;
+    width: 100%;
+  }
+  .additionally {
+    margin-top: 100px;
+    max-width: 961px;
+    width: 100%;
+    padding: 20px 35px 20px 20px;
+    background: #00000033;
+    border-radius: 20px;
+    margin-bottom: 160px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .page-name {
+    margin-top: 20px;
+  }
+  main {
+    padding: 0 10px;
+  }
+  .wrapper-inner {
+    background: url("imgs/delivery-bg-mb.png") center center no-repeat;
+    background-size: cover;
+  }
+  .delivery-titles {
+    max-width: 259px;
+    width: 100%;
+    margin-top: 40px;
+  }
+  .delivery-title {
+    font-size: 40px;
+    line-height: 49px;
+    color: #fff;
+    letter-spacing: 0.04rem;
+    font-family: 'Cormorant';
+    text-transform: uppercase;
+  }
+  .delivery-disclaimer {
+    margin-top: 53px;
+    max-width: 280px;
+    width: 100%;
+    margin-left: 0;
+  }
+  .payment-cards {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-width: 198px;
+    width: 100%;
+  }
+  .payment-card {
+    max-width: 198px;
+    width: 100%;
+    min-height: 185px;
+    height: 100%;
+    border-radius: 20px;
+    background: #00000033;
+    padding: 20px 12px 53px 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    -webkit-transition: .3s;
+    transition: .3s;
+  }
+  .payment-card:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  .payment-block {
+    margin-top: 70px;
+  }
+  .block-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .block-title {
+    font-size: 14px;
+  }
+  .payment-card-desc {
+    max-width: 174px;
+    width: 100%;
+    font-weight: 300;
+    font-family: 'Oswald';
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.02rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .card-circle {
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #6B535F;
+    margin-bottom: 23px;
+    margin-right: 0;
+  }
+  .price {
+    margin-top: 60px;
+    margin-left: 0;
+    padding-left: 34px;
+    max-width: 259px;
+    width: 100%;
+  }
+  .terms {
+    margin-left: 0;
+    padding-left: 34px;
+    max-width: 350px;
+    width: 100%;
+  }
+  .price-item {
+    font-weight: 300;
+    font-family: 'Oswald';
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.02rem;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .additionally {
+    margin-top: 60px;
+    max-width: 961px;
+    width: 100%;
+    padding: 20px 10px 30px 10px;
+    background: #00000033;
+    border-radius: 20px;
+    margin-bottom: 160px;
+  }
+  .additionally-desc {
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.04rem;
   }
 }
 /*# sourceMappingURL=delivery.css.map */
