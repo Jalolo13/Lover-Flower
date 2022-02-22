@@ -1,0 +1,91 @@
+@import normolize
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap')
+
+@mixin flex-type($flex: flex, $justify: space-between, $align: center, $wrap: wrap, $text: center, $direction: column) 
+    display: $flex 
+    justify-content: $justify 
+    align-items: $align 
+    flex-wrap: $wrap 
+    text-align: $text 
+    flex-direction: $direction
+
+$clr1: #43FFD2
+$clr2: #D978AC
+
+%back-block
+    background: rgba(0, 0, 0, 0.2)
+    backdrop-filter: blur(20px)
+    border-radius: 10px
+
+%flex-center
+    display: flex
+    justify-content: center
+    align-items: center
+
+%flex-column
+    display: flex
+    flex-direction: column
+
+%title
+    font-size: 100px
+    line-height: 121px
+    text-transform: uppercase
+    color: #fff
+    letter-spacing: 0.02em
+    font-family: 'Cormorant', sans-serif
+
+%h4-titles
+    font-size: 20px
+    line-height: 30px
+    letter-spacing: 0.02rem
+    color: #fff
+
+%subtitles
+    font-size: 30px
+    line-height: 44px
+    text-transform: uppercase
+
+%btns
+    width: 255px
+    height: 50px
+    color: #000
+    font-size: 12px
+    line-height: 18px
+    text-transform: uppercase
+    background: $clr1
+    font-weight: 700
+    letter-spacing: 0.1em
+
+%list
+    text-transform: uppercase
+    color: #fff
+
+%texts
+    font-size: 14px
+    line-height: 21px
+    text-transform: uppercase
+    letter-spacing: 0.04rem
+
+%hover-active-btn
+    transition: 0.2s
+    &:hover
+        background: #7D2253
+        color: #fff
+        transform: scale(1.1)
+    &:active
+        transform: scale(1.05)
+        box-shadow: inset 0px 0px 10px #1B000E
+
+%hover-active-links
+    transition: 0.2s
+    &:hover
+        transform: scale(1.1)
+        text-decoration: underline
+    &:active
+        transform: scale(1.05)
+        text-decoration: none
+
+
+
+@import main
+@import footer
