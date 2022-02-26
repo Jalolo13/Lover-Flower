@@ -1,0 +1,76 @@
+.networks
+  background: #000
+  padding-top: 200px
+.networks-inner
+  background: url('../imgs/section5-bg.png')left top no-repeat
+  background-size: cover
+  min-height: 621px
+  padding-top: 130px
+.networks__container
+  @include flex-type($align: end, $wrap: none, $text: none, $direction: none)
+.networks_frames
+  @include flex-type($justify: none, $align: none, $text: none, $direction : none)
+  gap: 30px
+  img
+    transition: .3s
+    &:hover
+      transform: scale(1.2)
+.networks-network-icons
+  display: flex
+  margin-top: 60px
+  gap: 30px
+  img
+    width: 40px
+    height: 40px
+  
+// MEDIA
+
+@media screen and (max-width: 768px)
+  .networks
+    background: #000
+    padding-top: 0
+  .networks__container
+    display: flex
+    gap: 61px
+  .networks-inner
+    background: url('../imgs/section5-mb-bg.png')left center no-repeat
+    background-size: cover
+    min-height: 460px
+    padding-top: 100px
+    padding-bottom: 100px
+  .networks__container
+    @include flex-type($justify: none, $wrap: none, $text: none, $direction: column-reverse)
+    gap: 61px
+  .networks_frames
+    max-width: 341px
+    width: 100%
+    gap: 20px
+  .networks-network-icons
+    display: none
+@media screen and (max-width: 320px)
+  .networks
+    padding-top: 26px
+  .networks__container
+    @include flex-type($justify: none, $wrap: none, $text: none, $direction: column-reverse)
+    gap: 61px
+  .networks-inner
+    background: url('../imgs/section5-mb-bg.png')left top no-repeat
+    background-size: cover
+    min-height: 528px
+    padding-top: 41px
+    padding-bottom: 100px
+  .networks_frames
+    max-width: 300px
+    width: 100%
+    gap: 6px
+    img
+      width: 147px
+      height: 138px
+  .networks-network-icons
+    @include flex-type($justify: end, $align: none, $wrap: none, $text: none, $direction: none)
+    margin: 0
+    width: 100%
+    gap: 20px
+    img
+      width: 20px
+      height: 20px

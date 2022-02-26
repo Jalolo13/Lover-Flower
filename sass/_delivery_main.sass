@@ -1,13 +1,70 @@
-.header
-    width: 100%
+.about-us-header
+    max-width: 100%
     min-height: 80px
-    background: black
+    background: rgba(0, 0, 0, 0.8)
+    padding: 0 165px
+    display: flex
+    align-items: center
 
+.about-header-adaptive
+    display: none
+
+.about-header-list
+    display: flex
+
+.all-header-inner
+    display: none
+
+.adaptive-title
+    display: none
+    
+.all-header-contact
+    display: flex
+    align-items: center
+
+.about-vector-phone
+    margin-left: 150px
+    margin-right: 10px
+
+.about-phone
+    color: $clr1
+    @extend %texts
+    transition: .2s
+    &:hover
+        text-decoration: underline
+
+.about-basket
+    background: rgba(0, 0, 0, 0)
+    @extend %flex-center
+    backdrop-filter: blur(20px)
+    border-radius: 10px
+    transition: .2s
+    margin-left: 21px
+    &:hover
+        transform: scale(1.1)
+
+.about-list-item
+    @extend %list
+    margin-left: 50px
+    transition: 0.2s
+    &:first-child   
+        margin-left: 0
+
+.about-list-link
+    @extend %list
+    transition: .2s
+    display: inline-block
+    &:hover
+        color: $clr1
+        transform: scale(1.1)
+        text-decoration: underline
+
+    
 .wrapper-inner
-    background: url('imgs/delivery-bg.png')center bottom no-repeat
+    background: url('../imgs/delivery-bg.png')center bottom no-repeat
     background-size: cover
 
-main
+.delivery-main
   padding: 0 165px
 
 .page-name
@@ -15,7 +72,8 @@ main
     line-height: 17.78px
     letter-spacing: 0.04rem
     color: #fff
-    margin-top: 35px
+    text-transform: uppercase
+    margin-top: 15px
 
 .delivery-titles
     max-width: 615px
@@ -165,3 +223,4 @@ main
     line-height: 26px
     letter-spacing: 0.02rem
     color: #fff
+
