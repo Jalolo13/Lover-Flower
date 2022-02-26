@@ -1645,7 +1645,7 @@ input[type=number]::-webkit-outer-spin-button {
     padding: 0 60px;
   }
 }
-@media screen and (max-width: 1246px) {
+@media screen and (max-width: 1245px) {
   .about-header-adaptive {
     display: block;
   }
