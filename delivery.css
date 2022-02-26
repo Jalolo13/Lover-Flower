@@ -109,7 +109,7 @@ input[type="number"]::-webkit-outer-spin-button {
   border: 0;
   padding: 0;
   clip: rect(0 0 0 0);
-  overflow: hidd;
+  overflow: hidden;
 }
 
 .footer-item, .block-item {
