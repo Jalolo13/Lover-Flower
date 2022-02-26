@@ -1919,10 +1919,6 @@ input[type=number]::-webkit-outer-spin-button {
   padding-bottom: 60px;
 }
 
-.container {
-  padding: 0 165px;
-}
-
 .footer__container {
   display: flex;
   justify-content: space-between;
