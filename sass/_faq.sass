@@ -1,0 +1,85 @@
+.faq-main
+    padding: 0 165px
+
+.faq-inner
+    background: url('../imgs/faq-bg.png')center top no-repeat
+    background-size: cover
+
+.faq-title
+    margin-left: 95px
+    margin-top: 46px
+    font-size: 100px
+    line-height: 121px
+    color: #fff
+    letter-spacing: 0.02rem
+    font-family: 'Cormorant'
+    text-transform: uppercase
+    position: relative
+    &::before
+      content: ''
+      display: block
+      position: absolute
+      top: 62px
+      left: -95px
+      width: 65px
+      height: 0
+      border: 1px solid $clr1
+
+.faq-question__list
+    margin-top: 40px
+    margin-bottom: 220px
+    display: flex
+    flex-direction: column
+    gap: 10px
+
+.question-block
+    max-width: 825px
+    width: 100%
+    padding: 20px
+    border: 1px solid $clr1
+
+.question-block__top
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.question-block__button
+    width: 20px
+    height: 20px
+    display: flex
+    align-items: center
+
+.button-line,
+.button-line::before
+    width: 100%
+    background: $clr1
+    display: block
+    height: 2px
+
+.button-line::before 
+    transform: rotate(90deg)
+    content: ''
+    top: -20px
+
+.active
+    .button-line::before 
+      display: none
+
+.question-block__title
+    font-size: 20px
+    line-height: 30px
+    color: $clr1
+    font-family: 'Oswald'
+
+.question-block__answer
+    display: none
+    margin-top: 20px
+    margin-bottom: 10px
+    font-size: 20px
+    line-height: 29px
+    color: #fff
+    font-weight: 300
+    font-family: 'Oswald'
+
+.open
+    display: block
