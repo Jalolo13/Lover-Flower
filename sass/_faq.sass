@@ -16,14 +16,14 @@
     text-transform: uppercase
     position: relative
     &::before
-      content: ''
-      display: block
-      position: absolute
-      top: 62px
-      left: -95px
-      width: 65px
-      height: 0
-      border: 1px solid $clr1
+        content: ''
+        display: block
+        position: absolute
+        top: 62px
+        left: -95px
+        width: 65px
+        height: 0
+        border: 1px solid $clr1
 
 .faq-question__list
     margin-top: 40px
@@ -39,9 +39,7 @@
     border: 1px solid $clr1
 
 .question-block__top
-    display: flex
-    align-items: center
-    justify-content: space-between
+    @include flex-type($wrap : none, $text : none, $direction: none)
 
 .question-block__button
     width: 20px
@@ -63,7 +61,7 @@
 
 .active
     .button-line::before 
-      display: none
+        display: none
 
 .question-block__title
     font-size: 20px
