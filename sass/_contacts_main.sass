@@ -1,0 +1,85 @@
+.contacts-inner
+    background: url(../images/background/contacts-back.png)
+    background-size: cover
+    min-height: 2441px
+
+.contacts-main
+    padding: 0 165px
+
+.contacts-blocks
+    display: flex
+    flex-wrap: wrap
+    gap: 30px
+    justify-content: space-between
+
+.contacts-block
+    background: rgba(0, 0, 0, 0.2)
+    backdrop-filter: blur(20px)
+    width: 255px
+    text-align: center
+    min-height: 255px
+    border-radius: 20px
+
+.contacts-block-title
+    @extend %h4-titles
+    color: $clr1
+    text-transform: uppercase
+    font-weight: bold
+    margin-top: 72px
+    margin-bottom: 30px
+
+.contacts-block-text
+    @extend %about-subtitles
+
+.contacts-title
+    margin: 46px 0 40px 95px
+
+.contacts-form
+    display: flex
+    justify-content: space-between
+    margin-top: 140px
+    margin-bottom: 100px 
+
+.contacts-form-title
+    @extend %title
+    text-align: right
+    margin-right: 61px
+
+.contacts-form-input
+    width: 455px
+    height: 60px
+    border: 2px solid #404242
+    background: transparent
+    padding: 20px
+    @extend %texts
+    line-height: 20px
+    color: #395959
+    margin-bottom: 10px
+
+.comment-input
+  height: 60px * 2
+  padding-bottom: 80px
+  margin-bottom: 20px
+    
+.contacts-form-button
+    max-width: 290px
+    width: 100%
+    font-size: 10px
+    line-height: 11.72px
+    color: #fff
+    letter-spacing: 0.002em
+    a
+        color: #832F2F
+        text-decoration: underline
+    
+.contacts-map-title 
+    @extend %h4-titles
+    text-transform: uppercase
+    color: $clr1
+    font-weight: 700
+    margin-bottom: 20px
+
+.contacts-map-geo
+    min-height: 427px
+    max-width: 100%
+    margin-bottom: 200px
