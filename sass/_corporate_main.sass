@@ -1,0 +1,201 @@
+// Inner
+.corporate-inner
+    background: url('../images/background/corporate client back.png')
+    background-size: cover
+    min-height: 3926px
+
+.corporate-main
+    padding: 0 135px 0 165px
+
+// Текста
+
+.corporate-title
+    margin: 70px 0 0 95px
+
+.corporate-subtitles
+    max-width: 554px
+    margin: 0 0 105px 95px
+
+.corporate-subtitle
+    font-family: Cormorant
+    font-style: normal
+    font-weight: normal
+    font-size: 40px
+    line-height: 48px
+    letter-spacing: 0.02em
+    text-transform: uppercase
+    color: #fff
+    &:nth-child(2)
+        text-align: right
+    p
+        color: $clr1
+        margin-top: 20px
+        @extend %h4-titles
+        font-family: 'Oswald', sans-serif
+        font-weight: 400
+
+.corporate-sentence
+    @extend %h4-titles
+    max-width: 728px
+    text-transform: uppercase
+    span
+        color: $clr1
+        font-weight: 400
+
+.corporate-texts
+    max-width: 736px
+    margin: 100px 0 100px 95px
+    
+.corporate-text
+    @extend %h4-titles
+    margin-top: 20px
+    &:first-child
+        margin-top: 0
+    span
+        color: $clr1
+
+// Блоки
+
+.corporate-blocks
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(12, 1fr)
+    grid-column-gap: 30px
+    grid-row-gap: 10px
+    max-width: 100%
+    margin: 74px 0 100px 0
+
+.corporate-block
+    max-width: 100%
+    background: rgba(0, 0, 0, 0.2)
+    backdrop-filter: blur(20px)
+
+.corporate-block
+    @extend %h4-titles
+    @extend %flex-center
+
+.corporate-block-first, 
+.corporate-block-five
+    @extend %h4-titles
+    color: $clr1
+    padding: 15px 0
+    text-align: center
+    min-height: 60px
+    text-transform: uppercase
+    font-weight: 400
+
+.corporate-block-first
+    grid-area: 1 / 1 / 3 / 2
+.corporate-block-two
+    grid-area: 3 / 1 / 6 / 2
+.corporate-block-three
+    grid-area: 6 / 1 / 9 / 2
+.corporate-block-four
+    grid-area: 9 / 1 / 13 / 2
+.corporate-block-five
+    grid-area: 1 / 2 / 3 / 3
+.corporate-block-six
+    grid-area: 3 / 2 / 6 / 3
+    padding-left: 15px
+.corporate-block-seven
+    grid-area: 6 / 2 / 9 / 3
+    padding-left: 15px
+.corporate-block-eight
+    grid-area: 9 / 2 / 13 / 3
+    padding-left: 15px
+
+
+// Этапы работы
+.corporate-stages-flex
+    display: flex
+    justify-content: flex-end
+
+.corporate-stages
+    margin-right: 340px
+
+.corporate-stage
+    @extend .corporate-subtitle
+    color: $clr1
+
+.corporate-hr
+    width: 60px
+    height: 1px
+    background: $clr1
+    border: none
+    margin: 40px 0 21px 0
+
+.corporate-list
+    list-style: inside
+    list-style-type: decimal
+    margin-bottom: 184px
+
+.corporate-list-item
+    text-transform: uppercase
+    @extend %h4-titles
+
+// Формы
+
+.corporate-title-form
+    font-family: Cormorant
+    font-style: normal
+    font-weight: normal
+    font-size: 40px
+    line-height: 48px
+    letter-spacing: 0.02em
+    text-transform: uppercase
+    color: #fff
+    margin-bottom: 60px
+
+.corporate-form
+    display: grid
+    grid-template-columns: repeat(2, 1fr)
+    grid-template-rows: repeat(10, 1fr)
+    grid-column-gap: 30px
+    grid-row-gap: 20px
+    margin-top: 20px
+
+.corporate-form-subtitle
+    @extend %h4-titles
+    text-transform: uppercase
+    color: $clr1
+    font-weight: 400
+
+.corporate-form-list-title
+    font-style: normal
+    font-weight: normal
+    font-size: 14px
+    line-height: 21px
+    margin-bottom: 4px
+    letter-spacing: 0.06em
+    color: #FFFFFF
+    
+.corporate-form-input
+    width: 100%
+    min-height: 60px
+    background: rgba(0, 0, 0, 0)
+    border: 1px solid #555555
+    padding-left: 20px
+    caret-color: #fff
+    
+.form-list-one
+    grid-area: 1 / 1 / 2 / 2
+.form-list-two
+    grid-area: 2 / 1 / 3 / 2
+.form-list-three
+    grid-area: 3 / 1 / 4 / 2
+.form-list-four
+    grid-area: 4 / 1 / 5 / 2
+.form-list-five
+    grid-area: 5 / 1 / 6 / 2
+.form-list-six
+    grid-area: 6 / 1 / 7 / 2
+.form-list-seven
+    grid-area: 1 / 2 / 2 / 3
+.form-list-eight
+    grid-area: 2 / 2 / 3 / 3
+.form-list-nine
+    grid-area: 3 / 2 / 4 / 3
+.form-list-ten
+    grid-area: 4 / 2 / 5 / 3
+.form-list-eleven
+    grid-area: 7 / 1 / 8 / 2
