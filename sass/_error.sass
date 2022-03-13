@@ -1,0 +1,43 @@
+.error-inner
+    background: url('../images/imgs/error-bg.png')center top no-repeat
+    background-size: cover
+
+.error-main
+    max-width: 744px
+    width: 100%
+    padding: 0 30px
+    margin: 0 auto
+    height: 100vh
+    display: flex
+    justify-content: flex-end
+    align-items: flex-end
+    margin-bottom: 93px
+
+.error-content
+    display: flex
+    flex-direction: column
+    gap: 20px
+
+.error-text
+    @extend %texts
+    color: #fff
+    &:last-child
+        color: $clr1
+        text-decoration: underline
+
+
+@media screen and (max-width: 768px)
+    .error-inner
+        background: url('../images/imgs/error-mb-bg.png')center bottom no-repeat
+        background-size: cover
+    .error-main
+        max-width: 738px
+        margin-bottom: 70px
+@media screen and (max-width: 650px)
+    .error-main
+        max-width: 624px
+        margin-bottom: 55px
+@media screen and (max-width: 426px)
+    .error-main
+        max-width: 360px
+        margin-bottom: 33px
